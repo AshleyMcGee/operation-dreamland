@@ -1,0 +1,137 @@
+/* CSS Styling for Elements: Overrides Bootstrap 4 Default Styles */
+
+
+
+html, #large, .cover {
+    
+    height: 100%;
+    
+}
+
+.nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    
+    
+}
+
+#logo {
+    
+    margin-right: 10px;
+    margin-left: 315px;
+}
+
+.navbar-brand {
+    
+    font-family: "Bahnschrift Regular", Arial, sans-serif;
+    text-shadow: 1px 1px 20px #076431, 1px 1px 20px #076431;
+    font-size: 40px;
+}
+
+.nav-link {
+    
+    font-family: "Bahnschrift Regular", Arial, sans-serif;
+    font-size: 24px;
+    
+
+    
+}
+
+a:hover {
+    
+    text-shadow:1px 1px 20px #076431, 1px 1px 20px #076431;
+}
+
+.cover {
+    
+    background-image: url('UFOBackground.jpg');
+    padding-top: 90px;
+    color: white;
+       
+}
+
+h2 {
+    
+    text-align: center;
+    font-family: "Bahnschrift Regular", Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+
+
+.labels {
+    
+    text-align: center;
+    font-size: 18px;
+    font-family: "Bahnschrift Regular", Arial, sans-serif;
+    width: 200px;
+    padding-top: 10px;
+
+}
+
+
+.form-control {
+    
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+#comment-label {
+    
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#comment-input {
+    
+    width: 1085px;
+    height: 200px;
+   
+}
+
+
+#submit-button {
+    
+    font-family: "Bahnschrift Regular", Arial, sans-serif;
+    color: #076431;
+    width: 180px;
+    height: 55px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 455px;
+}
+
+#submit-entry {
+    
+    font-family: "Bahnschrift Regular", Arial, sans-serif;
+    color: #076431;
+    width: 180px;
+    height: 55px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+#submit-button:hover {
+    
+    box-shadow: 1px 1px 20px #076431, 1px 1px 20px #076431;
+    
+}
+
+#submit-entry:hover {
+    
+    box-shadow: 1px 1px 20px #076431, 1px 1px 20px #076431; 
+}
+
+.cover-text {
+    
+    font-family: "Bahnschrift Regular", Arial, sans-serif;
+    text-shadow:1px 1px 20px #076431, 1px 1px 20px #076431;
+    color: #076431;
+}
