@@ -14,10 +14,10 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
             <!-- link to Bahnschrift font-face -->
-            <link rel="stylesheet" type="text/css" href="../static/font-face/font-family.css">
+            <link rel="stylesheet" type="text/css" href="static/font-face/font-family.css">
         
             <!-- link to overriding css -->
-            <link rel="stylesheet" type="text/css" href="../static/style.css">
+            <link rel="stylesheet" type="text/css" href="static/style.css">
         
             <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
             <!--[if lt IE 9]>
@@ -29,8 +29,10 @@
     
         <header>
             <!-- Navigation -->
+
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                <a class="navbar-brand" href="index.html"><img id="logo" src="../static/project_logo-large.png" width="85" height="80">OPERATION DREAMLAND</a>
+                <img id="logo" src="static/project_logo-large.png" width="85" height="80">
+                <a class="navbar-brand" href="index.html">OPERATION DREAMLAND</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,12 +42,11 @@
                     <a class="nav-link" href="#">MISSION<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="report.html">REPORT SIGHTING</a>
+                    <a class="nav-link" href="templates/report.html">REPORT SIGHTING</a>
                   </li>
                 </ul>
               </div>
             </nav>
-    
         </header>
     
             <body id="large">
@@ -109,13 +110,13 @@
             </body>
         
         <!-- external JavaScript containing UFO data -->    
-        <script src="../static/js/data.js"></script>
+        <script src="static/js/data.js"></script>
     
         <!-- D3 Distribution -->
         <script src="https://d3js.org/d3.v5.min.js"></script>
         
         <!-- external JavaScript overriding D3 if necessary -->
-        <script src="../static/js/app.js"></script>
+        <script src="static/js/app.js"></script>
     
         <footer>
             <!-- Small footer for credit -->

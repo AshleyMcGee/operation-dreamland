@@ -129,6 +129,17 @@ h2 {
     box-shadow: 1px 1px 20px #076431, 1px 1px 20px #076431; 
 }
 
+.table {
+    
+    margin-top: 20px;
+}
+
+.table-striped {
+    
+    background: rgba(0, 0, 0, 0.75);
+    
+}
+
 .cover-text {
     
     font-family: "Bahnschrift Regular", Arial, sans-serif;

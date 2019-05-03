@@ -7,10 +7,8 @@ const submit_button = d3.select("#submit-button")
 //create a variable for the entry form on the report page
 const entry_button = d3.select("#submit-entry")
 
-//clear form information
-function clearTable(){
-    d3.select("#table-goes-here").selectAll("table").remove()
-}
+//clear table information
+
 
 
 //create the event listener for the submission button on the home page
@@ -19,8 +17,6 @@ submit_button.on("click", function(){
     //prevent the page from refreshing
     d3.event.preventDefault()
     
-    //clear previous form information
-    clearTable()
     
     //select the input elements
     let dateElement = d3.select("#date-time-input")
@@ -31,10 +27,17 @@ submit_button.on("click", function(){
     
     //get the values of the property of the input element
     let dateValue = dateElement.property("value")
-    console.log(dateValue)
+    // console.log(dateValue)
+    // console.log(typeof dateValue)
+    // console.log(typeof Date.parse(dateValue))
     
     //filter the data by element value
-    let filteredDate = ufoData.filter(sighting => sighting.datetime === dateValue)
+    let filteredDate = ufoData.filter(sighting => {
+        sightingDate = Date.parse(sighting.datetime)
+        inputDate = Date.parse(dateValue)  + 21600000
+        return sightingDate == inputDate
+        }
+    )
     console.log(filteredDate)
     
     //create the table
@@ -64,6 +67,5 @@ submit_button.on("click", function(){
         )
         }
     )
-    
     
 })
