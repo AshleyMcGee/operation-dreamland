@@ -1,13 +1,23 @@
 //create a variable for the data
 const ufoData = data
 
+
 //create submit button for the table filter on the homepage
 const submit_button = d3.select("#submit-button")
+
 
 //create a variable for the entry form on the report page
 const entry_button = d3.select("#submit-entry")
 
-//clear table information
+//Create variables that hold states for the US and Canada and the shapes of the UFOs
+const unitedStates = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
+                      "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "PR", 
+                      "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
+
+const canadaStates = ["AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"]
+
+
+//Toggling countries toggles the available states
 
 
 
@@ -27,18 +37,25 @@ submit_button.on("click", function(){
     
     //get the values of the property of the input element
     let dateValue = dateElement.property("value")
-    // console.log(dateValue)
-    // console.log(typeof dateValue)
-    // console.log(typeof Date.parse(dateValue))
+    let stateValue = stateELement.property("value")
+    let countryValue = countryElement.property("value")
+    let shapeValue = shapeElement.property("value")
+
     
     //filter the data by element value
-    let filteredDate = ufoData.filter(sighting => {
-        sightingDate = Date.parse(sighting.datetime)
-        inputDate = Date.parse(dateValue)  + 21600000
-        return sightingDate == inputDate
-        }
-    )
-    console.log(filteredDate)
+    let filteredDate = ufoData
+        .filter(sighting => { //filters on the date input
+            sightingDate = Date.parse(sighting.datetime)
+            inputDate = Date.parse(dateValue)  + 21600000
+            return sightingDate == inputDate
+            }
+        )
+        //.filter(sighting => sighting.shape === shapeValue) //filters on the shape input
+    
+    //filter on country selection
+    
+
+    
     
     //create the table
     let newTable = d3.select(".table").append('table')
@@ -67,5 +84,6 @@ submit_button.on("click", function(){
         )
         }
     )
+    
     
 })
