@@ -23,6 +23,8 @@ The background is an old paper texture on a black and flourescent green gradient
 
 ![front-end1](https://github.com/AshleyMcGee/operation-dreamland/blob/master/front-end1.png "Screen capture of the search form on Operation Dreamland.")
 
+<p style="text-align: center;">A screenshot of the search form.</p>
+
 I find that designing anything for web without first designing a PSD takes longer and looks shoddier than having first laid out the elements the way I want. After I had the final PSDs in place, I used a combination of static HTML and Bootstrap elements to create the web page. Design from start to finish took a cumulative ten hours.
 
 
@@ -31,6 +33,8 @@ I find that designing anything for web without first designing a PSD takes longe
 Operation Dreamland started out as an experimental front-end table visualization with JavaScript, a simple searchable array of JSON objects, a sampling of the world's collective UFO sightings. It is still very much in this format. Currently, the "database" is searchable by date only. However, my conditional statement converts the Bootstrap date-time object into miliseconds from the epoch using the Javascript Date object. Ideally, one would simply compare a string object to the value of the key named "date-time" in the JSON object, which was also a string. However, that object should not have been a string. It should have been a definitive date-time object so that when it converted to miliseconds, it would not be six hours behind the object coming from the Bootstrap date input field. 
 
 It took some fancy footwork, but myself and my instructor were able to make the conversion and add six hours worth of miliseconds to the string-cum-date-object so that the array could be searched by actual date rather than by a string that one hopes a user can match exactly to the one in the JSON. 
+
+[]
 
 Here is the current status:
 
@@ -45,6 +49,10 @@ However...
 ### I Want to Believe: The Future of Operation Dreamland
 
 Though it seemed this project would mearly be searchable array of JSONs,it soon became clear that in order to account for additional sightings, a front-end collection of objects would not be sustainable. The database would need to be moved to the back end. Also, the position of the fields need to be switched to be more sensical to users. 
+
+![front-end2](https://github.com/AshleyMcGee/operation-dreamland/blob/master/front-end2.png "A form for updating the database with new sightings")
+
+<p style="text-align: center;">A screenshot of the update form</p>
 
 In addition to user experience, here is the future plan for Operation Dreamland
 
