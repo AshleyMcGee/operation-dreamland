@@ -21,6 +21,9 @@ I developed an Illuminati-esq logo based on the eye atop the pyramid on the back
 
 The background is an old paper texture on a black and flourescent green gradient. A satelite view of Area 51 is superimposed over the whole. The font is a stock font with Windows that I had made into a font face so that I could use it online. 
 
+![alt text][logo]
+[logo]: https://github.com/AshleyMcGee/operation-dreamland/blob/master/front-end1.png "Screen capture of the search form on Operation Dreamland."
+
 I find that designing anything for web without first designing a PSD takes longer and looks shoddier than having first laid out the elements the way I want. After I had the final PSDs in place, I used a combination of static HTML and Bootstrap elements to create the web page. Design from start to finish took a cumulative ten hours.
 
 
