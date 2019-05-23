@@ -30,7 +30,7 @@ I find that designing anything for web without first designing a PSD takes longe
 
 ### Situational Report
 
-Operation Dreamland started out as an experimental front-end table visualization with JavaScript, a simple searchable array of JSON objects, a sampling of the world's collective UFO sightings. It is still very much in this format. Currently, the "database" is searchable by date only. However, my conditional statement converts the Bootstrap date-time object into miliseconds from the epoch using the Javascript Date object. Ideally, one would simply compare a string object to the value of the key named "date-time" in the JSON object, which was also a string. However, that object should not have been a string. It should have been a definitive date-time object so that when it converted to miliseconds, it would not be six hours behind the object coming from the Bootstrap date input field. 
+Operation Dreamland started out as an experimental front-end table visualization with JavaScript, a simple searchable array of JSON objects, a sampling of the world's collective UFO sightings. It is still very much in this format. Currently, the "database" is searchable by date only. However, my conditional statement converts the Bootstrap date-time object into miliseconds from the epoch using the Javascript Date object. One would simply have compared a string object to the value of the key named "date-time" in the JSON object, which was also a string. However, that object should not have been a string. It should have been a definitive date-time object so that when it converted to miliseconds, it would not be six hours behind the object coming from the Bootstrap date input field. 
 
 It took some fancy footwork, but myself and my instructor were able to make the conversion and add six hours worth of miliseconds to the string-cum-date-object so that the array could be searched by actual date rather than by a string that one hopes a user can match exactly to the one in the JSON. 
 
@@ -41,16 +41,16 @@ It took some fancy footwork, but myself and my instructor were able to make the 
 Here is the current status:
 
   * The front-end form is only searchable by date at the moment. 
-  * The form on the "Report Sighting" page is not set up yet. 
+  * The form on the "Report Sighting" page is not connected to anything. 
   * So far, the page is only good for full size medium and large desktop or laptop screens. 
-  * The site is currently hosted a github page. 
+  * The site is currently hosted on a github page. 
   * I was so confident in the success of the site, I bought the domain name for www.operationdreamland.com
  
 However...
 
 ### I Want to Believe: The Future of Operation Dreamland
 
-Though it seemed this project would mearly be searchable array of JSONs,it soon became clear that in order to account for additional sightings, a front-end collection of objects would not be sustainable. The database would need to be moved to the back end. Also, the position of the fields need to be switched to be more sensical to users. 
+Though it seemed this project would mearly be a searchable array of JSONs, it soon became clear that in order to account for additional sightings, a front-end collection of objects would not be sustainable. The database would need to be moved to the back end. Also, the position of the fields need to be switched to be more sensical to users. 
 
 ![front-end2](https://github.com/AshleyMcGee/operation-dreamland/blob/master/front-end2.png "A form for updating the database with new sightings")
 
@@ -65,7 +65,7 @@ In addition to user experience, here is the future plan for Operation Dreamland
   
 I believe that the Government (with a capital G) is fundamentally failing some Americans. I believe honesty and transparency are no longer important both to the people representing our best interests nor to some of their constituents. I believe that patriotism has been replaced with nationalism, and I believe some of the people suffering most from this dillusion are the people who volunteer their bodies and lives to preserve freedom at home and abroad. 
 
-I want to believe that we can do our part to re-shine the light on the truth, both at home and throughout the cosmos. I want to believe that if our Government cannot support the people it uses to further the causes of freedom once they return from campaigning, then it is our job as fellow citizens to provide what support we can. While we search for proof that we are not alone in the universe, we can prove that our veterans are not alone here on earth. 
+I want to believe that we can do our part to re-shine the light on the truth, both at home and throughout the cosmos. I want to believe that if our Government cannot support the people it uses to further the causes of freedom once they return from campaigning, then it is our job as fellow citizens to provide what support we can. While we search for proof that we are not alone in the universe, we can prove that our veterans are not alone here on Earth. 
 
 ## Conclusion
 
