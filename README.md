@@ -1,4 +1,4 @@
-https://ashleymcgee.github.io/operation-dreamland/templates/report.html#
+https://ashleymcgee.github.io/operation-dreamland/index.html
 
 # Operation Dreamland
 
